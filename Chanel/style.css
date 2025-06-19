@@ -14,11 +14,13 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.938);
+    color: white;
 }
 
 header {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding-bottom: 50px;
     padding-top: 30px;
@@ -50,13 +52,30 @@ article > p {
     text-align: justify;
 }
 
-img.Coco {
-    width: 900px;
-    height: 600px;
+section#branco {
+    background-color: white;
+    color: black;
 }
 
-img {
-    width: 100%;
+img.Coco {
+    border-radius: 10px;
+    margin: 30px;
+    width: 35%;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+}
+
+img.li {
     display: block;
-    margin: auto;
+    margin: 10px auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+
+div {
+    text-align: justify;
 }
