@@ -1,11 +1,30 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'chanel', arial, sans-serif;
-    src: url(couture-bldit.otf) format('otf');
-    font-weight: bold;
-    font-style: normal;
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+.passion-one-regular {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.passion-one-bold {
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.passion-one-black {
+  font-family: "Passion One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
 
 * {
     margin: 0px;
@@ -14,37 +33,37 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(0, 0, 0, 0.938);
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 header {
     background-color: white;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding-bottom: 50px;
-    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
 
 header > h1 {
-    font-family: 'chanel', arial, sans-serif;
+    font-family: "Anton", sans-serif;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 header > p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Passion One", sans-serif;
     padding-top: 5px;
     font-size: 20px;
 }
 
 main {
     margin: auto;
-    padding: 40px;
 }
 
 article > h2 {
     padding-bottom: 10px;
+    font-family: "Anton", sans-serif;;
 }
 
 article > p {
@@ -52,9 +71,37 @@ article > p {
     text-align: justify;
 }
 
+img {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+section {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+section > h2 {
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+section > p {
+    padding: 20px;
+    font-family: "Passion One", sans-serif;
+    font-style: bold;
+}
+
 section#branco {
-    background-color: white;
-    color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(31, 29, 29);
+    color: white;
+    
 }
 
 img.Coco {
@@ -63,19 +110,44 @@ img.Coco {
     width: 35%;
 }
 
-li {
-    list-style: none;
-    text-align: left;
-}
-
-img.li {
-    display: block;
-    margin: 10px auto;
-    max-width: 400px;
-    width: 100%;
-}
-
-
 div {
     text-align: justify;
+}
+
+li {
+    list-style: none;
+    padding-bottom: 15px;
+    
+}
+
+.bloco {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.imagem {
+    width: 230px;
+    border-radius: 10px;
+}
+
+.texto {
+    color: black;
+    text-align: justify;
+}
+
+footer {
+    background-color: rgb(29, 28, 28);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: "Anton", sans-serif;
 }
