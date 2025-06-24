@@ -31,6 +31,11 @@
     padding: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 166px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
@@ -43,6 +48,9 @@ header {
     text-align: center;
     padding-bottom: 30px;
     padding-top: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header > h1 {
@@ -55,6 +63,24 @@ header > p {
     font-family: "Passion One", sans-serif;
     padding-top: 5px;
     font-size: 20px;
+}
+
+nav {
+    text-align: center;
+    position: sticky;
+    top: 136px;
+     background-color: white;
+    z-index: 1000;
+    padding: 6px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+nav > a {
+    margin: 10px;
+    text-decoration: none;
+    font-family: "Passion One", sans-serif;
+    color: black;
+    font-weight: bold;
 }
 
 main {
@@ -96,7 +122,7 @@ section > p {
     font-style: bold;
 }
 
-section#branco {
+section.branco {
     background-size: cover;
     background-attachment: fixed;
     background-color: rgb(31, 29, 29);
