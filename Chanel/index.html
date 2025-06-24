@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <H1>CHANEL</H1>
         <p>Elegância que nunca sai de moda</p>
@@ -21,11 +22,13 @@
     </nav>
     <main>
         <article>
+            
             <section id="section001">
                 <h2 class="font">A História da Chanel: Como Tudo Começou!</h2>
                 <div style="display: flex; align-items: center;">
                     <p>A Chanel foi fundada por <strong>Gabrielle Bonheur Chanel</strong>, mais conhecida como Coco Chanel, em 1910, na França. Tudo começou com uma pequena loja de chapéus chamada <strong>Chanel Modes</strong>, em Paris. Com seu olhar inovador, ela logo começou a criar roupas que quebravam padrões da época, priorizando conforto, elegância e simplicidade. <br> <br>Coco revolucionou a moda feminina, deixando de lado os espartilhos apertados e trazendo peças mais práticas, leves e sofisticadas. Assim nasceu a essência da Chanel: liberdade, sofisticação e autenticidade.</p> 
                     <img src="imagens/chanel.jpeg" alt="Coco Chanel" class="Coco">
+                    
                 </div>
                 
             </section>
@@ -33,12 +36,32 @@
             <section class="branco" id="section002"> 
                 <h2>As Primeiras Peças Icônicas</h2>
                 <p>Logo após os chapéus, Coco começou a criar roupas que mudaram o mundo da moda. As primeiras peças ficaram famosas pela simplicidade e elegância.</p>
-                <ul>
-                    <li><strong>Vestido Preto Básico (Little Black Dress) -</strong> Lançado nos anos 1920, se tornou símbolo de elegância e praticidade.</li> <img src="imagens/little black dress.jpg" alt="little basic dress">
-                    <li><strong>Tailleur Chanel –</strong> O famoso conjunto de saia e blazer de tweed, confortável e extremamente sofisticado, lançado nos anos 1950.</li>
+                <div class="slider">
+                    <div class="slide active">
+
+                     <img src="imagens/little black dress.jpg" alt="little basic dress">
+
+                     <div class="caption"><strong>Vestido Preto Básico (Little Black Dress) -</strong> Lançado nos anos 1920, se tornou símbolo de elegância e praticidade.</div>
+                     </div>
+
+                    <div class="slide">
+
                     <img src="imagens/taileur.jpg" alt="taileur">
-                    <li><strong>Suéteres de Jersey –</strong> Coco usou tecidos antes considerados masculinos para criar roupas femininas, confortáveis e elegantes.</li> <img src="imagens/Jersey.jpg" alt="jersey">
-                </ul>
+
+                    <div class="caption"><strong>Tailleur Chanel –</strong> O famoso conjunto de saia e blazer de tweed, confortável e extremamente sofisticado, lançado nos anos 1950.</div>
+
+                    </div>
+                     <div class="slide">
+                    <img src="imagens/Jersey.jpg">
+
+                    <div class="caption"><strong>Suéteres de Jersey –</strong> Coco usou tecidos antes considerados masculinos para criar roupas femininas, confortáveis e elegantes.</div>
+                    
+                </div>
+
+                <button class="btn prev">&#10094;</button>
+                <button class="btn next">&#10095;</button>
+
+                </div>
             </section>
 
             <section id="section003">
@@ -71,9 +94,11 @@
                 </div>
                     </div>
             </section>
+        </div>
              
         </article>
     </main>
     <footer>Site criado por <a href="https://github.com/Ana-Martiins" target="_blank">Ana Martins</a></footer>
+    <script src="script.js"></script>
 </body>
 </html>
